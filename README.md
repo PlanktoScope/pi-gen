@@ -1,6 +1,8 @@
 # pi-gen
 
-Tool used to create Raspberry Pi OS images. (Previously known as Raspbian).
+_Tool used to create the PlantoScope images for the Raspberry Pi_
+
+This tool is derived from the work of the Raspbery Pi Foundation. Their repository is found on [Github](https://www.github.com/RPI-Distro/pi-gen).
 
 
 ## Dependencies
