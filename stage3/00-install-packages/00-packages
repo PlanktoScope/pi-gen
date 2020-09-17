@@ -1,15 +1,11 @@
-gstreamer1.0-x gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-alsa gstreamer1.0-libav
-qpdfview gtk2-engines alsa-utils
-desktop-base
-git
-policykit-1
-gvfs
+git php
+build-essential
+python3 python3-pgzero python3-serial python3-picamera
+raspberrypi-net-mods raspberrypi-ui-mods
+python3-pip python3-numpy pypy
+wiringpi pigpio python3-pigpio raspi-gpio python3-gpiozero python3-rpi.gpio
+python3-spidev python3-twython python3-smbus
+ffmpeg
 rfkill
-chromium-browser rpi-chromium-mods
-gldriver-test
-fonts-droid-fallback
-fonts-liberation2
-obconf
-arandr
 libcamera-tools
 libcamera-apps
