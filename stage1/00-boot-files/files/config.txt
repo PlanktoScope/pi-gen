@@ -76,6 +76,8 @@ otg_mode=1
 start_x=1
 gpu_mem=128
 
+enable_uart=1
+
 [pi4]
 # Run as fast as firmware / board allows
 arm_boost=1
