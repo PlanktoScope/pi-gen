@@ -78,6 +78,8 @@ gpu_mem=128
 
 enable_uart=1
 
+dtoverlay=pps-gpio,gpiopin=4
+
 [pi4]
 # Run as fast as firmware / board allows
 arm_boost=1
