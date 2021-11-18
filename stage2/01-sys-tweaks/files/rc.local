@@ -11,10 +11,7 @@
 #
 # By default this script does nothing.
 
-# Print the IP address
-_IP=$(hostname -I) || true
-if [ "$_IP" ]; then
-  printf "My IP address is %s\n" "$_IP"
-fi
+# Replace wifi hostname
+sed -i "s/^ssid.*/ssid=PlanktoScope-$(python3 -c "import planktoscope.uuidName as uuidName; print(uuidName.machineName(machine=uuidName.getSerial()).replace(' ','_'))")/" /etc/hostapd/hostapd.conf
 
 exit 0
