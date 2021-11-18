@@ -74,11 +74,14 @@ otg_mode=1
 [all]
 
 start_x=1
-gpu_mem=128
+gpu_mem=256
 
 enable_uart=1
 
 dtoverlay=pps-gpio,gpiopin=4
+
+#stepper disable
+gpio=4,12,13,18,19,24=op,dl
 
 [pi4]
 # Run as fast as firmware / board allows
