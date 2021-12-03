@@ -1,6 +1,6 @@
 #!/bin/bash -e
 on_chroot << EOF
-  su - tester -c "bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) --confirm-install --confirm-pi"
+  su - "${FIRST_USER_NAME}" -c "bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) --confirm-install --confirm-pi"
 EOF
 
 install -v -m 644 -d "${ROOTFS_DIR}/etc/systemd/system/nodered.service.d/"
