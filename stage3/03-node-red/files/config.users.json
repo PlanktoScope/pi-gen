@@ -1,0 +1,34 @@
+{
+    "_": {
+        "editor": {
+            "view": {
+                "view-show-grid": true,
+                "view-snap-grid": true,
+                "view-grid-size": "20",
+                "view-node-status": true,
+                "view-node-show-label": true,
+                "view-show-tips": false,
+                "view-show-welcome-tours": true
+            },
+            "context": {
+                "flowRefresh": true
+            },
+            "tours": {
+                "welcome": "2.1.4"
+            }
+        },
+        "git": {
+            "user": {
+                "name": "User Name",
+                "email": "user@email.org"
+            },
+            "workflow": {
+                "mode": "manual"
+            }
+        },
+        "menu-menu-item-sidebar": true,
+        "menu-deploymenu-item-node": false,
+        "menu-deploymenu-item-full": false,
+        "menu-deploymenu-item-flow": true
+    }
+}
