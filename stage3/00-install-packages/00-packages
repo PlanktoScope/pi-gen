@@ -1,13 +1,14 @@
 git php
 build-essential
-python3 python3-pgzero python3-serial python3-picamera
+python3-pgzero python3-serial python3-picamera
 raspberrypi-net-mods raspberrypi-ui-mods
 python3-pip python3-numpy pypy
-wiringpi pigpio python3-pigpio raspi-gpio python3-gpiozero python3-rpi.gpio
+pigpio python3-pigpio raspi-gpio
 python3-spidev python3-twython python3-smbus
 ffmpeg
 i2c-tools
 rfkill
 libcamera-tools
 libcamera-apps
-libgtk-3-0 libavformat58 libavcodec58 libqt4-test libopenexr23 libilmbase23 libqtgui4 libavutil56 libjasper1 libqtcore4 libcairo-gobject2 libswscale5 libhdf5-dev libilmbase-dev libopenexr-dev libgstreamer1.0-dev libavcodec-dev libavformat-dev libswscale-dev libwebp-dev libatlas-base-dev
+libjpeg-dev libtiff5-dev libjasper-dev libpng-dev
+libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev
