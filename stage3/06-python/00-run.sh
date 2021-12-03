@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 on_chroot << EOF
-  pip3 install -U -r /home/"${FIRST_USER_NAME}"/PlanktoScope/requirements.txt
+  su - tester -c "pip3 install -U -r /home/"${FIRST_USER_NAME}"/PlanktoScope/requirements.txt"
 EOF
 
 install -v -m 755 -o 1000 -g 1000 files/blinkatest.py "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/test/blinkatest.py"
