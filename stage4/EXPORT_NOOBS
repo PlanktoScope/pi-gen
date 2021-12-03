@@ -1,2 +1,2 @@
-NOOBS_NAME="PlanktoScope OS (32-bit)"
-NOOBS_DESCRIPTION="A port of Debian with the Raspberry Pi Desktop, configured for the PlanktoScope device"
+NOOBS_NAME="PlanktoScope OS pscopehat (32-bit)"
+NOOBS_DESCRIPTION="A port of Raspberry OS for the PlanktoScope, pscopehat version with no desktop environment"
