@@ -1,3 +1,4 @@
 IMG_NAME=PlanktoScopeOS
+TARGET_HOSTNAME=planktoscope
 ENABLE_SSH=1
 CONTINUE=1
