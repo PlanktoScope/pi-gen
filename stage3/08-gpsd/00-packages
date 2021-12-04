@@ -1,3 +1,1 @@
-gpsd gpsd-clients
-pps-tools
-chrony
+gpsd pps-tools chrony
