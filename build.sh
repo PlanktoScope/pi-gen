@@ -229,7 +229,7 @@ export RELEASE=${RELEASE:-bullseye}
 export WPA_ESSID
 export WPA_PASSWORD
 export WPA_COUNTRY
-export ENABLE_SSH="${ENABLE_SSH:-1}"
+export ENABLE_SSH="${ENABLE_SSH:-0}"
 export PUBKEY_ONLY_SSH="${PUBKEY_ONLY_SSH:-0}"
 
 export LOCALE_DEFAULT="${LOCALE_DEFAULT:-en_GB.UTF-8}"
