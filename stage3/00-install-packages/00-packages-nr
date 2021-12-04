@@ -8,7 +8,5 @@ python3-spidev python3-twython python3-smbus
 ffmpeg
 i2c-tools
 rfkill
-libcamera-tools
-libcamera-apps
 libjpeg-dev libtiff5-dev libjasper-dev libpng-dev
 libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev
