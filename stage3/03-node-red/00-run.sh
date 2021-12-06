@@ -10,6 +10,5 @@ install -v -o 1000 -g 1000 files/config.projects.json "${ROOTFS_DIR}/home/${FIRS
 install -v -o 1000 -g 1000 files/config.users.json "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.node-red/.config.users.json"
 
 on_chroot << EOF
-  systemctl daemon-reload
   systemctl enable nodered.service
 EOF
