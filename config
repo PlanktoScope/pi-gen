@@ -1,4 +1,5 @@
 IMG_NAME=PlanktoScopeOS
+PI_GEN_REPO=https://github.com/oceantrotter/pi-gen
 TARGET_HOSTNAME=planktoscope
 WPA_COUNTRY=FR
 ENABLE_SSH=1
