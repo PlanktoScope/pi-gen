@@ -1,5 +1,3 @@
-git php
-build-essential
 python3-serial python3-picamera
 python3-pip python3-numpy pypy
 pigpio python3-pigpio raspi-gpio
