@@ -1,7 +1,5 @@
-python3-serial python3-picamera
-python3-pip python3-numpy pypy
+python3-pip
 pigpio python3-pigpio raspi-gpio
-python3-spidev python3-twython python3-smbus
 ffmpeg
 i2c-tools
 libjpeg-dev libtiff5-dev libjasper-dev libpng-dev
