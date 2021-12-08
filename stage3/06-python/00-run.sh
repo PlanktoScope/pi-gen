@@ -1,7 +1,8 @@
 #!/bin/bash -e
 
 on_chroot << EOF
-  su - "${FIRST_USER_NAME}" -c "pip3 install -U -r /home/"${FIRST_USER_NAME}"/PlanktoScope/requirements.txt"
+  su - "${FIRST_USER_NAME}" -c "pip3 install -U --no-warn-script-location -r /home/"${FIRST_USER_NAME}"/PlanktoScope/requirements.txt"
+  su - "${FIRST_USER_NAME}" -c "pip3 cache purge"
 EOF
 
 install -v -m 755 -o 1000 -g 1000 files/blinkatest.py               "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/test/blinkatest.py"
