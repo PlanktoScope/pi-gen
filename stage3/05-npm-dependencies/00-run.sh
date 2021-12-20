@@ -2,7 +2,7 @@
 
 on_chroot << EOF
   cd /home/"${FIRST_USER_NAME}"/.node-red/
-  npm install copy-dependencies
-  node_modules/copy-dependencies/index.js projects/PlanktoScope ./
-  npm update
+  su - "${FIRST_USER_NAME}" -c "npm install copy-dependencies"
+  su - "${FIRST_USER_NAME}" -c "node_modules/copy-dependencies/index.js projects/PlanktoScope ./"
+  su - "${FIRST_USER_NAME}" -c "npm update"
 EOF

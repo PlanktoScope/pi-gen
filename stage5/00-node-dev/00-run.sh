@@ -6,5 +6,5 @@ on_chroot << EOF
   cd "/home/${FIRST_USER_NAME}/.node-red"
   su - "${FIRST_USER_NAME}" -c "npm install nrlint"
   su - "${FIRST_USER_NAME}" -c "npm install node-red-debugger"
-  npx nrlint --init > .nrlintrc.js
+  su - "${FIRST_USER_NAME}" -c "npx nrlint --init > .nrlintrc.js"
 EOF
