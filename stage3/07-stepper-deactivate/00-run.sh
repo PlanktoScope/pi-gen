@@ -4,5 +4,5 @@ install -v -m 644 files/gpio-init.service "${ROOTFS_DIR}/etc/systemd/system/gpio
 install -v -m 755 files/stepper-disable "${ROOTFS_DIR}/usr/bin/stepper-disable"
 
 on_chroot << EOF
-  systemctl enable autohotspot.service
+  systemctl enable gpio-init.service
 EOF
