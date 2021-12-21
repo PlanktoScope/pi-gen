@@ -18,7 +18,6 @@ on_chroot << EOF
 	systemctl unmask hostapd
 	systemctl disable dnsmasq
 	systemctl disable hostapd
-	systemctl reload dnsmasq
 	systemctl enable autohotspot.service
 	systemctl enable autohotspot.timer
 EOF
