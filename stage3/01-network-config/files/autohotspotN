@@ -92,7 +92,7 @@ FindSSID() {
        j=0
        until [ $i -eq 1 ]; do #wait for wifi if busy, usb wifi is slower.
               ssidreply=$( (iw dev "$wifidev" scan ap-force | grep -E "^BSS|SSID:") 2>&1) >/dev/null 2>&1
-              #echo "SSid's in range: " $ssidreply
+              echo "SSid's in range: " $ssidreply
               printf '%s\n' "${ssidreply[@]}"
               echo "Device Available Check try " $j
               if ((j >= 5)); then #if busy 5 times goto hotspot
