@@ -1,10 +1,10 @@
 IMG_NAME=PlanktoScopeOS
-PI_GEN_REPO=https://github.com/oceantrotter/pi-gen
+PI_GEN_REPO=https://github.com/planktoscope/pi-gen
 TARGET_HOSTNAME=planktoscope
 WPA_COUNTRY=FR
 ENABLE_SSH=1
 LOCALE_DEFAULT=en_DK.UTF-8
+FIRST_USER_NAME=pi
 FIRST_USER_PASS=copepode
-DEPLOY_ZIP=0
-DEPLOY_GZ=1
+DEPLOY_COMPRESSION=gz
 USE_QCOW2=1
