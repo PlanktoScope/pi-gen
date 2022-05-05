@@ -19,34 +19,34 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: self-hosted
-    
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
-      
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       # Build the images
       - name: image build
         run: |
           echo "The time was ${{ steps.date.outputs.date }}"
+          echo 'APT_PROXY=http://apt-cacher.bazile.io:3142' >> config
           sudo ./build.sh
-      
+
       - uses: actions/upload-artifact@v2
         with:
           name: ${{steps.date.outputs.date}}-PlanktoScopeOS-dev.img.gz
           path: deploy/${{steps.date.outputs.date}}-PlanktoScopeOS-dev.img.gz
-      
+
       - uses: actions/upload-artifact@v2
         with:
           name: ${{steps.date.outputs.date}}-PlanktoScopeOS-adafruit.img.gz
           path: deploy/${{steps.date.outputs.date}}-PlanktoScopeOS-adafruit.img.gz
-      
+
       - uses: actions/upload-artifact@v2
         with:
           name: ${{steps.date.outputs.date}}-PlanktoScopeOS-pscopehat.img.gz
           path: deploy/${{steps.date.outputs.date}}-PlanktoScopeOS-pscopehat.img.gz
-      
